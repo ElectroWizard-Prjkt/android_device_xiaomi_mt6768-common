@@ -1193,3 +1193,7 @@ service mi_thermald /vendor/bin/mi_thermald
     group system
 on property:odm.audio.typec.status=*
     setprop vendor.audio.typec.status ${odm.audio.typec.status}
+
+    # report max frequency to unity tasks.
+    write /proc/sys/kernel/sched_lib_name "libunity.so"
+    write /proc/sys/kernel/sched_lib_mask_force 255
