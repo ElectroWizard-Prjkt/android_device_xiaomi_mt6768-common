@@ -17,6 +17,10 @@ persist.vendor.camera.privapp.list=com.android.camera,com.google.camera,org.line
 vendor.camera.aux.packagelist=com.android.camera,com.google.camera,org.lineageos.aperture,org.derpfest.flash
 vendor.camera.aux.packageexcludelist=org.telegram.messenger,com.microsoft.teams,com.discord
 
+# Cached app compaction
+persist.device_config.activity_manager.use_compaction=true
+
+
 # Dalvik
 dalvik.vm.dex2oat64.enabled=true
 
