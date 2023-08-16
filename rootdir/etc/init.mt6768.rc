@@ -1200,3 +1200,8 @@ on property:odm.audio.typec.status=*
 
     # default country code
     setprop ro.boot.wificountrycode 00
+
+# Restrict access on this node
+on property:sys.boot_completed=1
+    # Only owner can acces this node
+    chmod 440 /proc/net/unix
