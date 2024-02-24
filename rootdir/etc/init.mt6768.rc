@@ -1197,3 +1197,6 @@ on property:odm.audio.typec.status=*
     # Report max frequency to unity tasks
     write /proc/sys/kernel/sched_lib_name "UnityMain,libunity.so,com.miHoYo.,libunity.so,libfb.so,liblogic.so,libssgamesdkcronet.so,libil2cpp.so,com.activision."
     write /proc/sys/kernel/sched_lib_mask_force 255
+
+    # default country code
+    setprop ro.boot.wificountrycode 00
