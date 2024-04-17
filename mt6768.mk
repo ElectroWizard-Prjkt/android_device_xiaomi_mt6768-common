@@ -4,6 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Enable optional USB accessory support for MTK
+$(call soong_config_set,android_hardware_mediatek_usb,audio_accessory_supported,true)
+
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
