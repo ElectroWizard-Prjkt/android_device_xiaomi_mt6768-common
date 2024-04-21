@@ -222,5 +222,11 @@ Only the three quirks included above are recognized at this point:
             <Limit name="measured-frame-rate-1280x720" range="52-115" />
             <Limit name="measured-frame-rate-1920x1080" range="29-64" />
         </MediaCodec>
+        <MediaCodec name="c2.android.av1-dav1d.decoder" type="video/av01" update="true">
+            <Limit name="measured-frame-rate-320x240" range="121-286" />
+            <Limit name="measured-frame-rate-720x480" range="60-120" />
+            <Limit name="measured-frame-rate-1280x720" range="60-90" />
+            <Limit name="measured-frame-rate-1920x1080" range="40-60" />
+        </MediaCodec>
     </Decoders>
 </MediaCodecs>
